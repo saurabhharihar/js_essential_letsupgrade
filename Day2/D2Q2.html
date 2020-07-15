@@ -1,0 +1,63 @@
+<html>
+    <head>
+<title>
+    Array and String methods
+</title>
+</head>
+<body>
+    <script>
+// Array methods
+let arr=["Rio","Nairobi",12,55.452,true,NaN];
+console.log(arr);
+// returns length
+let l=arr.length;
+console.log("Length of array is "+l);
+//Sorting array
+console.log("Sorted array is displayed below");
+console.log(arr.sort());
+//Converts array to string 
+console.log("Array can be converted into string");
+console.log(arr.toString());
+//Joins passed argument to each element of array and converts it into string
+console.log("Join method joins argument to each element of array")
+console.log(arr.join("##"));
+// delete keyword
+console.log("Delete keyword deletes an element from array");
+delete arr[2];
+console.log(arr);
+//splice method Replaces elements in array
+console.log("splice method Replaces elements in array");
+arr.splice(0,2,"Denver","Moscow");
+console.log(arr);
+// Slice method
+console.log("slice method sice out array and makes new array")
+console.log(arr.slice(3));
+//     String Methods 
+console.log("    String Metods");
+let str1="   I am learning js from letsupgrade  ";
+console.log("String is :"+str1)
+// search method
+
+console.log(" using search method am is at index :"+str1.search("am"))
+// substring method doesnt work with -ve inex
+console.log("Made substring using substring method :"+str1.substring(4));
+//console.log(str1.substring(-5));
+// Replace method
+console.log("Changes in string using replace method ::")
+console.log(str1.replace("learning","practicing"));
+// trim method
+console.log("Removed all whitespaces using trim method :"+str1.trim())
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
