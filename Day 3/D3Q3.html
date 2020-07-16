@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let marks=Number(prompt("Enter marks",40));
+console.log("          USING IF ELSE BLOCK          ");
+if(marks >= 90){
+    console.log("Marks are "+marks + " and grade is A+");
+}
+else if(marks >= 75){
+    console.log("Marks are "+marks + " and grade is A");
+}
+else if(marks >= 50){
+    console.log("Marks are "+marks + " and grade is B");
+}
+else if(marks >= 40){
+    console.log("Marks are "+marks + " and grade is C");
+}
+else{
+    console.log("Marks are "+marks + " and grade is D");
+}
+
+
+// USING SWITH CASE STATEMENTS
+console.log("        USING SWITH CASE STATEMENTS          ");
+let marks3=marks/10;
+let marks4=parseInt(marks3);
+switch(marks4){
+case 9:console.log("Marks are "+marks + " and grade is A+");
+break;
+case 7:console.log("Marks are "+marks + " and grade is A");
+break;
+case 5:console.log("Marks are "+marks + " and grade is B");
+break;
+case 4:console.log("Marks are "+marks + " and grade is C");
+break;
+default:console.log("Marks are "+marks + " and grade is D");
+}
+
+// USING TERNARY OPERATOR 
+console.log("        USING TERNARY OPERATOR          ");
+(marks>=90)?console.log("Marks are "+marks + " and grade is A+"):(marks>=75)?console.log("Marks are "+marks + " and grade is A"):(marks>=50)?console.log("Marks are "+marks + " and grade is B"):(marks>=40)?console.log("Marks are "+marks + " and grade is C"):console.log("Marks are "+marks + " and grade is D");
+    </script>
+</body>
+</html>
